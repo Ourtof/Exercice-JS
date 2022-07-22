@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les conditions</title>
+</head>
+
+<body>
+
+    <script>        
+        const age = prompt('Quel âge as-tu?');
+        
+
+
+        //Ecrire les conditions ici.
+        
+        if(age == null || age == "") {
+            alert("Tu n'as pas d'âge ?");
+        } else {
+
+        const prenom = prompt("Quel est ton prénom?");
+
+            if(prenom == null || prenom == "") {
+                alert("Tu n'as pas de prénom ?");
+            } else {
+                if(age == 18) {
+                    alert(`Bonjour ${prenom}, je vois que tu as ${age}! Tu es juste majeur!!`);
+                } else if(age < 18) {
+                    alert(`Non non ${prenom}, tu n'as que ${age} ans! Tu es encore trop jeune pour ça!!`);
+                } else if(age > 18) {
+                    alert(`C'est bon, c'est bon ${prenom}, tu as ${age} ans... Tu commences à te faire vieux...`);
+                }
+            }
+        };
+      
+        
+        //Pour afficher un message à l'écran, vous pouvez utiliser la méthode alert().
+
+    </script>
+</body>
+
+</html>
