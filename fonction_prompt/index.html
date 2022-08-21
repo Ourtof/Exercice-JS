@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+        function addition(a,b,c) {
+            let resultat = (a + b) / c;
+            return resultat;
+        }
+        
+        //***************************************************************
+        
+        
+        for (let i = 0; i < 5; i++) {
+            let a = prompt('Entrez un premier nombre');
+            let b = prompt('Entrez un second nombre');
+            let c = prompt('Entrez un diviseur');
+            
+            let nombre = addition(parseInt(a),parseInt(b),parseInt(c)); 
+
+            if(c == 0) {
+                alert("le résultat est invalide");
+            } else {
+                alert("le résultat est : " + nombre);
+            }
+
+        }
+
+    </script>
+    
+</body>
+</html>
